@@ -1,0 +1,196 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f9f9f9, #ffe6f0); /* soft gradient */
+}
+
+/* Navbar styling */
+nav {
+  background: #e41877;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff4081; /* pink hover effect */
+}
+
+/* Hero section (Home page) */
+.hero {
+  background: url('images/fashion-bg.jpg') no-repeat center center/cover;
+  color: rgb(15, 10, 10);
+  padding: 50px 5px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.home-img {
+  width: 100%;
+  max-width: 900px;
+  margin: 80px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hero button,
+.shop-btn {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero button:hover,
+.shop-btn:hover {
+  background: #e73370;
+}
+
+/* Section styling */
+section {
+  padding: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/* About page */
+.about {
+  text-align: center;
+  padding: 40px;
+}
+
+.about-img {
+  width: 70%;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+/* Product grid */
+#shop-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Product card */
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* zoom effect */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  color: #444;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.product-card .price {
+  color: #ff4081;
+  font-weight: bold;
+}
+
+.rating {
+  color: #ff9800; /* golden stars */
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.product-card button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background: #e91e63;
+}
+
+/* Contact page form */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+.contact button:hover {
+  background: #e73370;
+}
